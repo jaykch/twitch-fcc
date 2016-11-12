@@ -12,14 +12,71 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        ul{
+        ul {
             list-style: none;
         }
-        li{
-            min-height: 5vh;
-            margin: 10px;
-            background: palevioletred;
+
+        #app {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(6, 216, 181, 0.91)), color-stop(100%, rgba(96, 45, 173, 0.91)));
+            background: -webkit-linear-gradient(45deg, rgba(6, 216, 181, 0.91) 0%, rgba(96, 45, 173, 0.91) 100%);
+            background: -o-linear-gradient(45deg, rgba(6, 216, 181, 0.91) 0%, rgba(96, 45, 173, 0.91) 100%);
+            background: -ms-linear-gradient(45deg, rgba(6, 216, 181, 0.91) 0%, rgba(96, 45, 173, 0.91) 100%);
+            background: linear-gradient(45deg, rgba(6, 216, 181, 0.91) 0%, rgba(96, 45, 173, 0.91) 100%);
         }
+
+        li {
+            min-height: 10vh;
+            margin: 3px;
+            display: flex;
+            align-items: center;
+        }
+
+        li * {
+            margin: 20px;
+        }
+
+        li.user-online {
+            background: rgba(59, 205, 65, 0.38);
+        }
+
+        li.user-offline {
+            background: rgba(255, 17, 0, 0.42);
+        }
+
+        .user-logo {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+
+        a {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        a, a:focus, a:visited {
+            color: #0e0b49;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+            color: rgba(14, 11, 73, 0.37);
+
+        }
+
+        .user-name{
+            font-size: 18px;
+        }
+
     </style>
 
 </head>
@@ -32,6 +89,10 @@
             </ul>
         </div>
     </div>
+    <footer>
+        <a href="https://github.com/jaykch/twitch-fcc" target="_blank">GitHub Link</a>
+    </footer>
 </div>
+
 </body>
 </html>
